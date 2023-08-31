@@ -6,11 +6,21 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '48px',
+    },
+    fontFamily: {
+        bebas: ['Bebas Neue', 'sans-serif'],
+        rubik: ['Rubik', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+    },
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        primary: '#5887c2',
+        secondary: '#999999',
+        ternary: '#ffc512',
+        dark: '#3f3f3f'
       },
     },
   },
