@@ -4,15 +4,15 @@ import Image from "next/image"
 export default function Navbar() {
   
     const menuNav = [
-        ['About', '/about'],
+        ['About', '#about'],
         ['Read', '/articles'],
         ['Photography', '/photos'],
         ['Contact', '/contact'],
     ];
 
     const accessNav = [
-        ['Masuk', '/access/login'],
-        ['Daftar', '/access/register'],
+        ['Masuk', '/pages/login'],
+        ['Daftar', '/pages/register'],
     ];
 
     return (

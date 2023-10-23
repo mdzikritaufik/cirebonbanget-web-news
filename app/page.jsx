@@ -1,6 +1,6 @@
 import Button from './components/button/Button'
 import Card from './components/cards/Card'
-import Navbar from './pages/dashboard/navbar/Navbar'
+import Navbar from './Template/navbar/Navbar'
 import InputForm from './components/input/InputForm'
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
     </div>
     {/* Hero Section End */}
     {/* About Section Start */}
-    <div>
+    <div id='about'>
       <div className='relative w-full min-h-max bg-sky'>
         <h2 className='text-night text-center font-rubik text-4xl py-10 font-semibold'>Apa itu Cirebon Banget?</h2>
         <div className='w-full flex flex-col text-[14px] p-8 text-center justify-between md:flex-row md:text-[20px] md:px-12'>

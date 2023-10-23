@@ -1,5 +1,5 @@
 import './globals.css';
-import Navbar from './pages/dashboard/navbar/Navbar';
+import Navbar from './Template/navbar/Navbar';
 // import "tw-elements-react/dist/css/tw-elements-react.min.css";
 // import { Roboto } from "next/font/google";
 

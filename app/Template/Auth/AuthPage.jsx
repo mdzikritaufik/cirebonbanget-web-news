@@ -2,15 +2,18 @@ import Button from '../../components/button/Button';
 // import InputForm from '../../components/input/InputForm';
 
 export default function AuthPage(props) {
-    const {greeting, altAccess, matchPassword, children} = props;
+    const {greeting, matchPassword, children, crossLinkText, crossLink, submitName} = props;
 
   return (
     <div>
-    <section className="my-auto">
-        <div className="m-16">
+    <section>
+        <div className='relative top-10 left-10'>
+
             <Button btnTitle={"Back"} link={"/"} />
+
         </div>
-        <div className="flex w-full max-w-sm mx-auto bg-white rounded-xl shadow-xl">
+        
+        <div className="flex w-full max-w-sm mx-auto my-10 bg-white rounded-xl shadow-xl">
             <div className="w-full px-6 py-8">
                 <div className="flex justify-center mx-auto">
                     <img className="w-auto h-12 sm:h-16" src="/logo.png" alt="cirebon banget"/>
@@ -30,14 +33,13 @@ export default function AuthPage(props) {
                         </svg>
                     </div>
         
-                    <span className="w-5/6 px-4 py-3 font-bold text-center">{altAccess}</span>
+                    <span className="w-5/6 px-4 py-3 font-bold text-center">Masuk dengan Google</span>
                 </a>
         
                 <div className="flex items-center justify-between mt-4">
                     <span className="w-1/5 border-b lg:w-1/4"></span>
         
-                    <a href="#" className="text-xs text-center text-fresh uppercase hover:underline">or login
-                        with email</a>
+                    <p className="text-xs text-center text-sky uppercase hover:underline">Atau isi manual</p>
         
                     <span className="w-1/5 border-b lg:w-1/4"></span>
                 </div>
@@ -49,17 +51,12 @@ export default function AuthPage(props) {
         
                 <div className="mt-6">
                     <button className="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gray-800 rounded-lg hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-50">
-                        Sign In
+                        {submitName}
                     </button>
                 </div>
-        
-                <div className="flex items-center justify-between mt-4">
-                    <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-        
-                    <a href="#" className="text-xs text-sky uppercase hover:underline">or sign up</a>
-        
-                    <span className="w-1/5 border-b dark:border-gray-600 md:w-1/4"></span>
-                </div>
+                <div className='text-sm text-sky text-center p-4'>
+                    <p>{crossLinkText} <a href="/pages/login" className="hover:underline">{crossLink}</a></p>
+                </div>     
             </div>
         </div>
     </section>

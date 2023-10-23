@@ -6,7 +6,7 @@ import Input from "./input";
 function InputForm(props) {
   const {label, name, type, placeholder} = props;
   return (
-    <div>
+    <div className="my-4">
       <Label htmlFor={name}>{label}</Label>
       <Input name={name} type={type} placeholder={placeholder}/>
     </div>
