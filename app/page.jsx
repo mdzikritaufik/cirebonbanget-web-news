@@ -1,4 +1,5 @@
-import Button from './components/button/button'
+import Button from './components/button/Button'
+import Card from './components/cards/Card'
 
 export default function Home() {
   return (
@@ -51,8 +52,10 @@ export default function Home() {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, eius minus, impedit quia blanditiis assumenda placeat voluptate ad deleniti, repellat esse molestias quod aperiam tenetur cum nostrum consectetur ipsam inventore?
           </p>
         </div>
-        <div>
-          bloack
+        <div className='mt-16 flex flex-col gap-5 md:flex-row md:justify-around'>
+          <Card/>
+          <Card/>
+          <Card/>
         </div>
       </div>
     </section>
