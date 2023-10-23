@@ -1,25 +1,9 @@
 import './globals.css';
-// import { Bebas_Neue, Rubik, Poppins } from 'next/font/google';
+import Navbar from './pages/dashboard/navbar/Navbar';
+// import "tw-elements-react/dist/css/tw-elements-react.min.css";
+// import { Roboto } from "next/font/google";
 
-// const bebas = Bebas_Neue({
-//   subsets: ['latin'],
-//   weight: ['400'],
-//   display: 'swap',
-//   variable: '--font-bebas',
-// })
-// const rubik = Rubik({
-//   subsets: ['latin'],
-//   weight: ['300', '500', '700'],
-//   display: 'swap',
-//   variable: '--font-rubik',
-// })
-// const poppins = Poppins({
-//   subsets: ['latin'],
-//   weight: ['200', '400', '800'],
-//   display: 'swap',
-//   variable: '--font-poppins',
-// })
-
+// const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: 'Home',
@@ -28,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <div className='font-roboto'>
+    { children }
+    </div>
   )
 }

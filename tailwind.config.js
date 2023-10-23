@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  
   ],
   theme: {
     container: {
@@ -14,13 +15,15 @@ module.exports = {
         bebas: ['Bebas Neue', 'sans-serif'],
         rubik: ['Rubik', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
     },
     extend: {
       colors: {
-        primary: '#5887c2',
-        secondary: '#999999',
-        ternary: '#ffc512',
-        dark: '#3f3f3f'
+        sky: '#0F2C59',
+        fresh: '#ffc700',
+        night: '#F0F0F0',
+        dark: '#3f3f3f',
+        grey: '#bcbcbc'
       },
     },
   },
