@@ -1,5 +1,5 @@
-import AuthPage from '../AuthPage';
-import InputForm from '../../../components/input/InputForm';
+import AuthPage from '../../Template/Auth/AuthPage';
+import InputForm from '../../components/input/InputForm';
 
 export default function Daftar() {
   return (
